@@ -10,6 +10,7 @@ buildscript {
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'com.facebook.testing.screenshot'
 
@@ -42,6 +43,7 @@ dependencies {
   compile 'com.jakewharton:butterknife:7.0.1'
   compile 'com.google.dagger:dagger:2.0.2'
   compile 'org.glassfish:javax.annotation:10.0-b28'
+  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   apt 'com.google.dagger:dagger-compiler:2.0.2'
   testCompile 'com.google.dagger:dagger-compiler:2.0.2'
   testCompile 'junit:junit:4.12'
